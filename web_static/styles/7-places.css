@@ -1,0 +1,34 @@
+
+.places h1 {
+    top: 0;
+    left: 0;
+    text-align: left;
+    font-size: 30px;
+    margin: 0;
+}
+.places article {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: solid 1px #FF5A5F;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*
+contains a title:
+tag: h1
+text: Places
+align in the top left
+font size: 30px
+contains multiple “Places” as listing (horizontal or vertical) describe by:
+tag: article
+width: 390px
+padding and margin 20px
+border #FF5A5F 1px with radius 4px
+contains the place name:
+tag: h2
+font size: 30px
+center horizontally*/

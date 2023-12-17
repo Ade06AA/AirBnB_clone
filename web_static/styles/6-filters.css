@@ -27,18 +27,26 @@
 .amenities, .locations {
     vertical-align: center;
     text-align: left;
-    display: flex;
+    /*display: flex;*/
+    display: block;
     justify-content: center;
     height: 100%;
     width: 25%;
-    flex-direction: column;
-    overflow: hidden;
-    overflow: auto;
+    /*flex-direction: column;*/
+    overflow: visible;
+}
+.popover {
+    display: none;
+    margin-top: 0;
+    background-color: #FAFAFA;
+    padding: 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
 }
 
-.amenities:hover,
-.locations:hover {
-    overflow: auto;
+.amenities:hover .popover,
+.locations:hover .popover {
     display: block;
 }
 
@@ -47,17 +55,35 @@
     border-right: 1px solid #DDDDDD;
 }
 
-.amenities div h4,
-.locations div h4{
+.amenities h4,
+.locations  h4{
     font-weight: 400;
     font-size: 14px;
     padding-top: 0;
     margin-top: 0;
+    margin-left: 60px;
 }
 
-.amenities div h3,
-.locations div h3{
+.amenities h3,
+.locations h3{
     font-weight: 600;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-left: 60px;
+}
+.popover  h3,
+.popover  h4 {
+    margin-left: 30px;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+ul {
+    margin-left: 0px;
+    padding-left: 0px;
 }
